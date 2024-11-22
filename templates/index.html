@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Folclores Brasileiros</title>
+</head>
+<body>
+    <h1>Folclores</h1>
+    {% for item in inf_boi %}
+        <h2>{{ item.nome }}</h2>
+        <p><strong>Comprimento:</strong> {{ item.comprimento }}</p>
+        <p><strong>Altura:</strong> {{ item.altura }}</p>
+        <p><strong>Peso:</strong> {{ item.peso }}</p>
+        <p><strong>Hábitat:</strong> {{ item.habitat  }}</p>
+    {% endfor %}
+</body>
+</html>

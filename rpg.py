@@ -1,3 +1,7 @@
+from flask import Flask, url_for, render_template
+
+app = Flask(__name__)
+
 print("PROJETO DE SELEÇÃO")
 nome = input("Insira seu nome: ").title()
 inicio = input("Insira a senha: ")
@@ -45,3 +49,6 @@ else:
     print("████▌▄▌▄▐▐▌█████")
     print("████▌▄▌▄▐▐▌▀████")
     print("▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀")
+
+app.run(debug=True)
+
